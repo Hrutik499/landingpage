@@ -3,6 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react"
 
 import WithSubnavigation from "@/components/Navbar"
 import SmallWithSocial from "@/components/Footer"
+import Footer from "@/components/Footer"
 
 export default function RootLayout({
   children,
@@ -22,6 +23,7 @@ export default function RootLayout({
           <div>
             <WithSubnavigation />
             {children}
+            <Footer />
             <SmallWithSocial/>
           </div>
         </ChakraProvider>
